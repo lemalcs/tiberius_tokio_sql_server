@@ -1,0 +1,19 @@
+[package]
+name = "tiberius_tokio_sql_server"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+tiberius = { version="0.12.3" ,features = ["sql-browser-tokio", "chrono"]}
+tokio = { version = "1.39.2",features = [
+    "net",
+    "macros",
+    "rt-multi-thread"
+] }
+tokio-util = {version = "0.7.11",features = ["compat"]}
+tokio-stream = "0.1.15"
+chrono = "0.4.38"
+uuid = "1.10.0"
+
+[lib]
+doctest = false
